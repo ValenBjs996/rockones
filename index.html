@@ -12,12 +12,17 @@
 <body>
     <header class="app-header">
         <h1 id="app-title">Inicio</h1>
-        <button id="btn-sync" class="icon-btn"><span class="material-icons-round">sync</span></button>
+        <button id="btn-sync" class="icon-btn gold" title="Sincronizar con la nube"
+                onclick="window.app.syncManual()">
+            <span class="material-icons-round">sync</span>
+        </button>
     </header>
 
     <main id="app-content"></main>
 
-    <button id="fab-add" class="fab"><span class="material-icons-round">add</span></button>
+    <button id="fab-add" class="fab">
+        <span class="material-icons-round">add</span>
+    </button>
 
     <nav class="bottom-nav">
         <button class="nav-item active" data-view="home">
@@ -46,14 +51,14 @@
         <div class="modal-content">
             <header class="modal-header">
                 <h2 id="modal-title">Título</h2>
-                <button id="btn-close-modal" class="icon-btn"><span class="material-icons-round">close</span></button>
+                <button id="btn-close-modal" class="icon-btn">
+                    <span class="material-icons-round">close</span>
+                </button>
             </header>
             <div id="modal-body"></div>
         </div>
     </div>
 
-    <script type="module" src="js/storage.js"></script>
-    <script type="module" src="js/whatsapp.js"></script>
     <script type="module" src="js/app.js"></script>
 </body>
 </html>
